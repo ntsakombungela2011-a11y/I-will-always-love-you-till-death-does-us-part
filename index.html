@@ -32,7 +32,7 @@
         <div class="orbit orbit-one"></div>
         <div class="orbit orbit-two"></div>
         <div class="sticker sticker-top">FRAGILE<br>ISH</div>
-        <div class="windmill-wrap" id="windmillWrap">
+        <div class="windmill-wrap" id="windmillWrap" role="button" tabindex="0" aria-label="Tap to spin the big windmill">
           <svg class="windmill" id="windmill" viewBox="0 0 360 420" role="img" aria-label="A bright yellow toy windmill">
             <path d="M180 186 L180 392" stroke="#253044" stroke-width="12" stroke-linecap="round"/>
             <path d="M180 388 L145 405 L215 405 Z" fill="#253044"/>
@@ -84,12 +84,16 @@
         </div>
         <button class="spin-btn" id="spinButton">Test the windmill <span>↻</span></button>
         <p class="spin-caption" id="spinCaption">It has one job. Let's see if it can do it.</p>
+        <div class="wind-control"><label for="windPower">BREEZE POWER <output id="windValue" for="windPower">3 / 5</output></label><input id="windPower" type="range" min="1" max="5" value="3" step="1"><p id="windDescription">A respectable little breeze.</p></div>
+        <div class="secret-note hidden" id="secretNote"><span>✦ YOU FOUND THE SECRET ✦</span><p>Plot twist: I would still choose you even if you were a windmill. Probably.</p></div>
         <div class="receipt">
           <div><span>Windmill</span><span>R0.00</span></div>
           <div><span>Delivery fee</span><span>R0.00</span></div>
           <div><span>Emotional damage from the joke</span><span>R0.00</span></div>
           <div class="receipt-total"><span>TOTAL</span><span>STILL FREE.</span></div>
         </div>
+        <button class="surprise-btn" id="surpriseButton">One last tiny surprise <span>♡</span></button>
+        <div class="extra-surprise hidden" id="extraSurprise"><span class="heart-doodle">♥</span><p>Just in case I have not made it obvious: I really, really like doing life with you. Even the silly bits.</p></div>
         <div class="final-note">
           <span class="heart-doodle">♥</span>
           <p>In all seriousness, I hope this made you laugh. You're my favourite person to be ridiculous with.</p>
