@@ -1,0 +1,81 @@
+:root{--yellow:#ffd928;--ink:#253044;--cream:#fff8e9;--orange:#ffad31;--coral:#f06f4f;--blue:#627d9c}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--yellow);color:var(--ink);font-family:"DM Sans",sans-serif;overflow-x:hidden}
+.paper-grain{position:fixed;inset:0;pointer-events:none;z-index:5;opacity:.11;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.25'/%3E%3C/svg%3E")}
+.topbar,footer{max-width:1180px;margin:auto;padding:25px 36px;display:flex;align-items:center;justify-content:space-between}
+.wordmark{font-family:"DM Mono",monospace;font-size:11px;letter-spacing:.12em;font-weight:500;color:var(--ink);text-decoration:none}
+.tiny-sun{font-size:19px;vertical-align:middle;margin-right:7px}
+.top-note,footer{font-family:"DM Mono",monospace;font-size:9px;letter-spacing:.12em}
+.hero{max-width:1180px;margin:0 auto;padding:65px 36px 92px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:28px;min-height:650px}
+.hero-copy{position:relative;z-index:2}
+.eyebrow{font:500 10px "DM Mono",monospace;letter-spacing:.12em;margin:0 0 25px}
+.eyebrow-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--coral);margin-right:8px}
+h1,h2{font-family:"Fraunces",serif;font-weight:700;letter-spacing:-.055em}
+h1{font-size:clamp(68px,9vw,116px);line-height:.88;margin:0 0 27px}
+h1 em,h2 em{font-weight:600;color:var(--coral)}
+.intro{font-size:15px;line-height:1.75;max-width:390px;margin:0 0 28px}
+.primary-btn,.spin-btn{border:2px solid var(--ink);background:var(--ink);color:var(--cream);font:600 13px "DM Sans",sans-serif;padding:16px 21px;cursor:pointer;transition:transform .2s,background .2s,color .2s}
+.primary-btn span{font-size:19px;margin-left:24px}
+.primary-btn:hover,.spin-btn:hover{transform:translateY(-3px);background:var(--cream);color:var(--ink)}
+.tiny-note{font:9px "DM Mono",monospace;letter-spacing:.08em;margin-top:15px}
+.hero-art{height:520px;position:relative;display:grid;place-items:center}
+.sunburst{position:absolute;width:360px;height:360px;border-radius:50%;background:#ffe76c;box-shadow:0 0 0 28px rgba(255,248,233,.22)}
+.orbit{position:absolute;border:1px solid rgba(37,48,68,.3);border-radius:50%;transform:rotate(-22deg)}
+.orbit-one{width:460px;height:210px}.orbit-two{width:490px;height:280px;transform:rotate(34deg)}
+.windmill-wrap{position:relative;z-index:1;width:min(360px,85%);filter:drop-shadow(12px 16px 0 rgba(37,48,68,.12));transform:rotate(-5deg)}
+.windmill{width:100%;overflow:visible}
+.blades{transform-origin:180px 180px;transition:transform 1.5s cubic-bezier(.15,.75,.2,1)}
+.windmill-shadow{position:absolute;bottom:4px;left:30%;width:40%;height:12px;border-radius:50%;background:rgba(37,48,68,.15);filter:blur(8px)}
+.sticker{position:absolute;z-index:2;background:var(--cream);border:2px solid var(--ink);padding:10px 13px;font:500 9px/1.5 "DM Mono",monospace;letter-spacing:.08em;text-align:center;box-shadow:4px 4px 0 var(--ink)}
+.sticker-top{top:58px;right:8% ;transform:rotate(9deg)}
+.sticker-bottom{bottom:62px;left:3%;transform:rotate(-8deg)}
+.spark{position:absolute;font-size:30px}.spark-a{top:18%;left:14%;color:var(--coral)}.spark-b{right:9%;bottom:20%;font-size:38px}.spark-c{left:16%;bottom:18%;font-size:20px}
+.delivery{max-width:760px;margin:0 auto;padding:30px 28px 90px;scroll-margin-top:25px}
+.hidden{display:none}
+.delivery-label{display:flex;justify-content:space-between;font:10px "DM Mono",monospace;letter-spacing:.12em;border-top:1px solid rgba(37,48,68,.5);padding:15px 0}
+.delivery-card{background:var(--cream);border:2px solid var(--ink);padding:clamp(22px,5vw,48px);box-shadow:10px 10px 0 var(--ink);position:relative}
+.card-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:45px}
+.tape{background:#ffe36a;border:1px dashed var(--ink);padding:8px 13px;font:10px "DM Mono",monospace;letter-spacing:.1em;transform:rotate(-3deg)}
+.package-icon{font-size:32px;color:var(--coral)}
+.delivery-card h2{font-size:clamp(54px,9vw,88px);line-height:.9;margin:0 0 22px}
+.delivery-copy{font-size:14px;line-height:1.8;max-width:500px}
+.product-window{display:grid;grid-template-columns:180px 1fr;align-items:center;gap:25px;background:#fff0b6;border:1px solid rgba(37,48,68,.25);padding:20px;margin:30px 0}
+.mini-windmill{display:grid;place-items:center}
+.mini-windmill svg{width:145px}
+.mini-blades{transform-origin:90px 95px;transition:transform 1s cubic-bezier(.2,.7,.2,1)}
+.product-tag{font:9px "DM Mono",monospace;letter-spacing:.12em;color:var(--coral)}
+.product-details h3{font:700 27px "Fraunces",serif;margin:9px 0}
+.product-details p{font-size:12px;line-height:1.7}
+.price{font:700 14px "DM Mono",monospace}.price small{font:10px "DM Sans",sans-serif;font-weight:400}
+.spin-btn{background:var(--coral);border-color:var(--ink);color:var(--ink);min-width:210px}
+.spin-btn span{font-size:20px;margin-left:20px}
+.spin-caption{font:10px "DM Mono",monospace;margin:12px 0 30px}
+.receipt{border-top:1px dashed rgba(37,48,68,.5);border-bottom:1px dashed rgba(37,48,68,.5);padding:17px 0;margin:25px 0;font:11px "DM Mono",monospace}
+.receipt div{display:flex;justify-content:space-between;gap:15px;padding:7px 0}
+.receipt-total{border-top:1px solid var(--ink);margin-top:8px;padding-top:14px!important;font-weight:700}
+.final-note{background:#fff0b6;padding:25px;margin-top:28px;position:relative}
+.heart-doodle{font-size:26px;color:var(--coral)}
+.final-note p{font:600 19px/1.5 "Fraunces",serif;max-width:500px}
+.signature{font:10px "DM Mono",monospace;letter-spacing:.04em}
+.bottom-disclaimer{text-align:center;font:9px "DM Mono",monospace;letter-spacing:.1em;margin:28px 0 0}
+footer{border-top:1px solid rgba(37,48,68,.25);padding-top:20px;padding-bottom:25px}
+footer b{color:var(--coral);font-size:15px}
+@media(max-width:720px){
+ .topbar{padding:20px 20px}.top-note{font-size:8px}
+ .hero{grid-template-columns:1fr;padding:48px 22px 45px;gap:0;min-height:unset}
+ h1{font-size:clamp(68px,18vw,100px)}
+ .hero-art{height:390px;margin-top:15px}
+ .sunburst{width:260px;height:260px}.orbit-one{width:340px;height:165px}.orbit-two{width:350px;height:220px}
+ .windmill-wrap{width:min(300px,82%)}
+ .sticker-top{top:32px;right:2%}.sticker-bottom{bottom:35px;left:0}
+ .delivery{padding:25px 18px 65px}
+ .delivery-label{font-size:8px}
+ .product-window{grid-template-columns:120px 1fr;gap:12px;padding:12px}
+ .mini-windmill svg{width:115px}
+ .product-details h3{font-size:22px}
+ .product-details p{font-size:11px}
+ footer{padding:20px;font-size:8px}
+}
+@media(max-width:390px){.product-window{grid-template-columns:1fr;text-align:center}.mini-windmill svg{width:125px}.delivery-card{padding:20px}.card-top{margin-bottom:30px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
