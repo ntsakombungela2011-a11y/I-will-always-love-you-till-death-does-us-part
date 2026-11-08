@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffd928">
+  <meta name="description" content="A very important delivery for Boipelo.">
+  <title>A Very Important Delivery 💛</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="paper-grain" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="wordmark" href="#" aria-label="A very important delivery home"><span class="tiny-sun">✳</span> THE WINDMILL DEPARTMENT</a>
+    <span class="top-note">EST. FOR BOIPELO · 2026</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> SPECIAL DELIVERY · HANDLE WITH GIGGLES</p>
+        <h1>We have a<br><em>delivery</em><br>for you.</h1>
+        <p class="intro">One very important package. One very specific request. And one delivery person who takes instructions a little too literally.</p>
+        <button class="primary-btn" id="openDelivery">Open your delivery <span aria-hidden="true">↗</span></button>
+        <p class="tiny-note">PLEASE NOTE: this package is 100% unserious.</p>
+      </div>
+      <div class="hero-art" aria-label="Illustration of a yellow pinwheel">
+        <div class="sunburst"></div>
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="sticker sticker-top">FRAGILE<br>ISH</div>
+        <div class="windmill-wrap" id="windmillWrap">
+          <svg class="windmill" id="windmill" viewBox="0 0 360 420" role="img" aria-label="A bright yellow toy windmill">
+            <path d="M180 186 L180 392" stroke="#253044" stroke-width="12" stroke-linecap="round"/>
+            <path d="M180 388 L145 405 L215 405 Z" fill="#253044"/>
+            <g class="blades" id="blades">
+              <path d="M180 180 C148 126 106 73 70 51 C58 44 48 54 55 68 C80 122 128 163 180 180Z" fill="#fff8d7" stroke="#253044" stroke-width="5" stroke-linejoin="round"/>
+              <path d="M180 180 C234 148 287 106 309 70 C316 58 306 48 292 55 C238 80 197 128 180 180Z" fill="#ffad31" stroke="#253044" stroke-width="5" stroke-linejoin="round"/>
+              <path d="M180 180 C212 234 254 287 290 309 C302 316 312 306 305 292 C280 238 232 197 180 180Z" fill="#f06f4f" stroke="#253044" stroke-width="5" stroke-linejoin="round"/>
+              <path d="M180 180 C126 212 73 254 51 290 C44 302 54 312 68 305 C122 280 163 232 180 180Z" fill="#fff8d7" stroke="#253044" stroke-width="5" stroke-linejoin="round"/>
+              <circle cx="180" cy="180" r="17" fill="#253044"/>
+              <circle cx="180" cy="180" r="6" fill="#ffd928"/>
+            </g>
+          </svg>
+          <div class="windmill-shadow"></div>
+        </div>
+        <div class="sticker sticker-bottom">MADE WITH<br>QUESTIONABLE<br>LOGIC ♥</div>
+        <span class="spark spark-a">✳</span><span class="spark spark-b">✦</span><span class="spark spark-c">✳</span>
+      </div>
+    </section>
+
+    <section class="delivery hidden" id="delivery" aria-live="polite">
+      <div class="delivery-label"><span>PACKAGE #001</span><span>RECIPIENT: BOIPELO</span></div>
+      <div class="delivery-card">
+        <div class="card-top">
+          <span class="tape">OPEN CAREFULLY</span>
+          <span class="package-icon">✳</span>
+        </div>
+        <p class="eyebrow">YOUR REQUEST HAS BEEN PROCESSED</p>
+        <h2>One (1) toy<br><em>windmill.</em></h2>
+        <p class="delivery-copy">You asked for a windmill. We heard you. We sourced the finest little spinny thing available and personally supervised its delivery.</p>
+        <div class="product-window">
+          <div class="mini-windmill">
+            <svg viewBox="0 0 180 220" aria-hidden="true">
+              <path d="M90 95V211" stroke="#253044" stroke-width="7" stroke-linecap="round"/>
+              <g class="mini-blades" id="miniBlades">
+                <path d="M90 95C72 65 48 34 27 21C20 17 15 23 19 31C33 61 61 84 90 95Z" fill="#fff8d7" stroke="#253044" stroke-width="3"/>
+                <path d="M90 95C120 77 151 53 164 32C168 25 162 20 154 24C124 38 101 66 90 95Z" fill="#ffad31" stroke="#253044" stroke-width="3"/>
+                <path d="M90 95C108 125 132 156 153 169C160 173 165 167 161 159C147 129 119 106 90 95Z" fill="#f06f4f" stroke="#253044" stroke-width="3"/>
+                <path d="M90 95C60 113 29 137 16 158C12 165 18 170 26 166C56 152 79 124 90 95Z" fill="#fff8d7" stroke="#253044" stroke-width="3"/>
+                <circle cx="90" cy="95" r="9" fill="#253044"/>
+              </g>
+            </svg>
+          </div>
+          <div class="product-details">
+            <span class="product-tag">LIMITED EDITION</span>
+            <h3>The Little Spinny</h3>
+            <p>Colour: sunshine yellow<br>Function: spinning<br>Purpose: making you smile</p>
+            <span class="price">R0.00 <small>(paid in affection)</small></span>
+          </div>
+        </div>
+        <button class="spin-btn" id="spinButton">Test the windmill <span>↻</span></button>
+        <p class="spin-caption" id="spinCaption">It has one job. Let's see if it can do it.</p>
+        <div class="receipt">
+          <div><span>Windmill</span><span>R0.00</span></div>
+          <div><span>Delivery fee</span><span>R0.00</span></div>
+          <div><span>Emotional damage from the joke</span><span>R0.00</span></div>
+          <div class="receipt-total"><span>TOTAL</span><span>STILL FREE.</span></div>
+        </div>
+        <div class="final-note">
+          <span class="heart-doodle">♥</span>
+          <p>In all seriousness, I hope this made you laugh. You're my favourite person to be ridiculous with.</p>
+          <span class="signature">— your favourite delivery person</span>
+        </div>
+      </div>
+      <p class="bottom-disclaimer">THANK YOU FOR SHOPPING AT THE WINDMILL DEPARTMENT. NO REFUNDS ON BAD JOKES.</p>
+    </section>
+  </main>
+
+  <footer><span>© THE WINDMILL DEPARTMENT</span><span>MADE JUST FOR YOU <b>♥</b></span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
